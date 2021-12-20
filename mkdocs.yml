@@ -1,0 +1,88 @@
+site_name: ABP Computing @ CERN
+site_description: CERN - Accelerator and Beam Physics Computing Website
+site_url: http://cern.ch/abpcomputing
+
+repo_name: GitLab
+repo_url: https://gitlab.cern.ch/abpcomputing/abpcpweb
+edit_uri: 'blob/master/docs'
+
+markdown_extensions:
+    - pymdownx.arithmatex
+    - pymdownx.extra
+    - pymdownx.magiclink
+    - pymdownx.tilde
+    - pymdownx.tasklist
+    - pymdownx.smartsymbols
+    - pymdownx.mark
+    - pymdownx.details
+    - pymdownx.superfences
+    - pymdownx.tabbed
+    - admonition
+    - footnotes
+    - toc
+
+
+
+theme:
+    name: material
+    logo: cernlogo.png
+
+# To change the color set to the CERN one
+extra_css:
+    - css/extra.css
+
+extra_javascript:
+    - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+
+
+nav:
+    - 'Home': index.md
+    - 'ABP computing panel': abpcp.md
+    - 'Beam physics software':
+        Core ABP codes: codes/softwarelist_core.md
+        Legacy and R&D ABP codes: codes/softwarelist_other.md
+        External codes and tools: codes/softwarelist_external.md
+    - 'Computing resources':
+        #Windows terminal services: computing_resources/cernts.md
+        HTCondor batch service (including GPUs): computing_resources/cernbatch.md
+        HPC clusters at CERN: computing_resources/hpc_cern.md
+        HPC cluster at INFN-CNAF: computing_resources/hpc_cnaf.md
+        LXPLUS service: computing_resources/lxplus.md
+        ABP dev. workstations (including GPUs): computing_resources/workstations.md
+        ABP Storage space: computing_resources/abpstorage.md
+    - 'Objectives and activities':
+        Code-specific: codespecific_activities.md
+        Housekeeping: housekeeping.md
+        Notes from meetings: notes_from_meetings.md
+    - 'Guidelines and HowTos':
+        Guidelines:
+            Guidelines for ABP software: guides/softguide.md
+            Guidelines for python tools: guides/python_packages.md
+            # Collaborative development with git: guides/gitinfo.md
+        AFS and EOS filesystems:
+            OpenAFS installation: guides/openafs.md
+            Mounting EOS on MAC: guides/eos_on_mac.md
+        HTCondor:
+            HTCondor usage: computing_resources/cernbatch.md
+            Local HTCondor installation: guides/htcondor.md
+        Accelerators controls & data:
+            PyTIMBER and NXCALS: guides/pytimber_nxcals.md
+            Using NXCALS-pyspark on lxplus: guides/nxcals_lxplus.md
+            Acc-Py Virtual Environments and Packages:  guides/accpy.md
+            PyJapc and Accelerator data:  guides/pyjapc.md
+        Websites & doc tools:
+            Create a MkDocs website (like this one): guides/mkdocs_site.md
+            Sphinx - RTD documentation: guides/readthedocs.md
+        Preparing a Python installation: guides/python_inst.md
+        Virtual Machines:
+            General: guides/openstack.md
+            CentOS CC7: guides/openstackCC7.md
+            CentOS CS8: guides/openstackCS8.md
+        Docker basics:  guides/docker.md
+        SSH tunnel: guides/sshtunnel.md
+        Configure Vim for Python development: guides/vim_autocomplete.md
+        M1 MacBook experience: guides/m1_macbook.md
+
+    - 'Meetings': meetings.md
+    - 'Mattermost': https://mattermost.web.cern.ch/abpcomputing/channels/town-square
+    - 'GitLab Group': https://gitlab.cern.ch/abpcomputing
